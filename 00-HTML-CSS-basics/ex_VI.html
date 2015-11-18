@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Form</title>
+    </head>
+    <body>
+      <form>
+            First name:<br>
+            <input type="text" name="firstname" required placeholder="Enter your first name">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" required placeholder="Enter your last name">
+            <br>
+            Email:<br>
+            <input type="email" name="email" required placeholder="Enter a valid email address">
+            <br>
+            Birthday:<br>
+            <input type="date" name="birthday" required>
+            <br>Favourite Sport<br>
+            <input list="sports" type="text" required placeholder="select your favourite sport">
+            <datalist id="sports">
+                  <option label="Football" value="Football">
+                  <option label="Basketball" value="Basketball">
+                  <option label="Voleyball" value="Voleyball">
+            </datalist>
+            <br><textarea name="textarea" rows="10" cols="50" placeholder="Write your bio here"></textarea>
+            <br><input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </body>
+</html> 
