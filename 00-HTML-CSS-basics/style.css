@@ -1,0 +1,26 @@
+* {
+	font: fantasy;
+	font-family: cursive;
+
+   }
+
+
+header,footer,aside,nav {
+
+	  background-color: #3453ED;
+
+    }
+
+p   {
+
+      text-align: center;
+  
+    }
+
+
+aside {
+
+	   text-align: right;
+
+      } 
+
