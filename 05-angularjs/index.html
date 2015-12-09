@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngularJS</title>
+		<meta charset="utf-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="app.js"></script>
+        <script src="controller.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  	</head>
+	<body ng-app="myApp">
+         <center>
+            <h1>Movie Listing</h1> 
+         	<div ng-controller="MainController">
+         		<div ng-repeat="title in titles">         			  
+                         <div ng-show="movie.isEdited">
+                                <input type="text" ng-model="title.name"/> - <input type="text" ng-model="title.details"/>
+                                <button ng-click="movie.isEdited = false">Ok</button>
+                         </div>
+
+                         <div ng-hide="movie.isEdited">
+                                <ul>
+                                    <b>{{title.name}}:</b>
+                                    <div ng-hide="detail.isShow">
+                                       <button ng-click="detail.isShow = true">Show Details</button>
+                                    </div>
+                                    <div ng-show="detail.isShow"> - {{title.details}} -    
+                                       <button ng-click="detail.isShow = false">Hide details</button>
+                                    </div>
+                                    <button ng-click="movie.isEdited = true">Edit</button>
+                                    <button ng-click="removeMovie(title)">Remove</button>
+                                </ul> 
+                                
+                         </div>
+         		</div>
+         		<input type="text" ng-model="titleBox" placeholder="type a title here"> - 
+                <input type="text" ng-model="detailBox" placeholder="type details here">
+         		<button type="submit" class="addbtn" ng-click="addMovie()">Add movie</button>
+         	</div>
+         </center>
+	</body>
+</html>
