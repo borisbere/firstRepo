@@ -1,5 +1,4 @@
 $(document).ready(function(){
-      $(".intro").fadeOut("slow");
       $(".search").click(function(){
         var city = $("#city").val();
         var province = $("#province").val();
@@ -25,22 +24,3 @@ $(document).ready(function(){
               })
       })
 })      
-  	  /*$("#search").click(function(){
-     	 try{
-            $.ajax({
-              url: "http://bootcamp.aws.af.cm/welcome/Boris",
-              success: function(data){
-                  $("div").text(data.response) 
-            }
-            });
-
-             
-       }catch(err){
-  	         $("div").text("server error");
-  	            $("section").css("color","#FF0000");}
-        $("div").css("color","#FF0000"); });
-  	    $(".alias").focus(); 
-        
-        
-               }});
-        })*/
