@@ -1,0 +1,63 @@
+.res{ 
+ 
+          font-family: arial,sans-serif-light,sans-serif;
+          font-size: large !important;
+          font-weight: lighter !important;
+          color: #878787 !important;
+          width: 400px;
+          height: 200px;
+          margin-left: -8px;
+		  margin-right: -35px;
+       	  padding: 20px 20px 24px;
+		  background-color: #fff;
+		  position: relative;
+		  line-height: 1.2;
+		  
+		  border-width: 1px;
+		  border-style: solid;
+	      border-color: rgba(103, 103, 102, 0.22);
+	      margin: 10px;
+
+        
+        }
+.resTem{
+	    width: 65px;
+        height: 57px;
+        display: inline;
+        font-size: 62px;
+        color: #212121 !important;
+        float: left;
+}
+.resUni{
+	    display: inline;
+	    margin-top: 6px;
+	    float: left;
+} 
+.resPre{
+	    width: 180px;
+	    display: block;
+	    float: left;
+}
+.resHum{
+	    float: left;
+}
+.resIco{
+	    display: inline;
+	    float: left;
+}
+.resPHW{
+	width: 200px;
+	height: 80px;
+	float: right;
+    min-width: 50%;
+    padding-left: 5px;
+    line-height: 20px;
+    padding-top: 2px;
+}
+.resWin{
+	display: -webkit-inline-box;
+}
+ol{
+	margin-top: 0px;
+    margin-bottom: 0px;
+}
