@@ -7,7 +7,7 @@ $(document).ready(function(){
               success: function(data){
                 var weather = data.query.results.channel;
                 $(".res").css("display","block");
-                $(".results, .resTem, .subRes, .resIco, .resUni, .resPre, .resHum, .resWin").text("");
+                $(".results, .resTem, .subRes, .resIco, .resUni, .resPre, .resHum, .resWin,.resDay0,.resDay1,.resDay2,.resDay3,.resDay4").text("");
                 $(".results").append(weather.location.city+", ");
                 $(".results").append(weather.location.country+"<br>");
                 $(".results").append(weather.item.condition.date+"<br>");
@@ -20,8 +20,25 @@ $(document).ready(function(){
                 $(".resPre").append("Pressure: "+weather.atmosphere.pressure+" "+weather.units.pressure);
                 $(".resHum").append("Humidity: "+weather.atmosphere.humidity+"%");
                 $(".resWin").append("Wind: "+weather.wind.speed+" "+weather.units.speed);
+                
+                for (var i = 0; i < 5; i++) {
+                   var resDay = ".resDay"+i;
+                   var forCode = weather.item.forecast[i].code;
+                   $(resDay).append(weather.item.forecast[i].day+"<br><img src=\http://l.yimg.com/a/i/us/we/52/"+forCode+".gif\ /><br>");
+                   $(resDay).append(weather.item.forecast[i].high+"° . "+weather.item.forecast[i].low+"°")
+                };
               }
 
-              })
+        })
+        $(".res").hover(function(){
+         $(".remove").css("display","inline");
+      },
+      function(){
+         $(".remove").css("display","none")
       })
+        $(".remove").click(function(){
+              $(".res").css("display","none")
+        })
+      });
+    
 })      
