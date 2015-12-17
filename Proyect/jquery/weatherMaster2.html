@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+		<title>Weather Master</title>
+		<meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="WeatherMaster.css">
+        <script src="app.js"></script>
+        <script src="controller.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  	</head>
+
+  	<body>
+        <div ng-controller="wController">
+            <h1>Weather Master 2.0</h1>
+            <div class="intro"><b>Enter your city</b></div>
+            <input type="text" class="location" ng-model="cityBox" placeholder="type your city">
+            <input type="text" class="location" ng-model="provinceBox" placeholder="type your province">
+            <button class="search" ng-model="btnShow">Show Weather</button>
+            <div ng-repeat="weather in weathers"> 
+                {{ weather.city }}
+                {{citybox}}
+                <div class="res">
+                    <div class="remove"><img src="img/close-button.jpg"></div>
+                    <div class="results"></div>
+                    <div class="resIco"></div>
+                    <div class="resTem"></div>
+                    <div class="resUni"></div>
+                    <div class="resPHW">
+                       <ol>
+                          <div class="resPre"></div>
+                          <div class="resHum"></div>
+                          <div class="resWin"></div>
+                       </ol>
+                    </div>
+                       <div class="resFor">
+                          <div class="resFoe">
+                              <div class="resDay0"></div>
+                              <div class="resDay1"></div>
+                              <div class="resDay2"></div>
+                              <div class="resDay3"></div>
+                              <div class="resDay4"></div>
+                          </div>
+                       </div>
+        </div>
+    </body>
+
+</html>
