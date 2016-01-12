@@ -1,9 +1,9 @@
-.wireframe{
+.wireframe {
 	width: 950px;
 	height: 1000px;
 
 }
-.repeat{
+.repeat {
 	     box-shadow: 5px 5px 5px #888888;	     
 	     display: inline;
 	     width: 442px;
@@ -13,7 +13,7 @@
 	     padding-top: 5px;
 }
 
-.res{ 
+.res { 
  
           font-family: arial,sans-serif-light,sans-serif;
           font-size: large !important;
@@ -33,69 +33,69 @@
 
         
         }
-.resTem{
-	    padding-left: 10px;
-        height: 57px;
-        display: inline;
-        font-size: 62px;
-        color: #212121 !important;
-        float: left;
+.resTem {
+	     padding-left: 10px;
+         height: 57px;
+         display: inline;
+         font-size: 62px;
+         color: #212121 !important;
+         float: left;
 }
-.resUni{
-	    display: inline;
-	    margin-top: 6px;
-	    float: left;
+.resUni {
+	     display: inline;
+	     margin-top: 6px;
+	     float: left;
 } 
-.resPre{
-	    width: 180px;
-	    display: block;
-	    float: left;
+.resPre {
+	     width: 180px;
+	     display: block;
+	     float: left;
 }
-.resHum{
-	    float: left;
+.resHum {
+	     float: left;
 }
-.resIco{
-	    display: inline;
-	    float: left;
+.resIco {
+	     display: inline;
+	     float: left;
 }
-.resPHW{
-	    width: 200px;
-	    height: 80px;
-	    float: right;
-        min-width: 50%;
-        padding-left: 5px;
-        line-height: 20px;
-        padding-top: 2px;
+.resPHW {
+	     width: 200px;
+	     height: 80px;
+	     float: right;
+         min-width: 50%;
+         padding-left: 5px;
+         line-height: 20px;
+         padding-top: 2px;
 }
-.resWin{
-	    display: -webkit-inline-box;
+.resWin {
+	     display: -webkit-inline-box;
 }
-ol{
+ol {
 	    margin-top: 0px;
         margin-bottom: 0px;
 }
-.active{
-	   display: inline;
+.active {
+	     display: inline;
 
 }
-.remove{
-	   cursor: pointer;
-	   float: right;
-	   border-radius: 50%;
+.remove {
+	     cursor: pointer;
+	     float: right;
+	     border-radius: 50%;
 }
-.resFor{
-	    display: inline;
-	    margin-top: 55px;
-	    border-width: 1px;
-        border-style: solid;
-	    border-color: rgba(103, 103, 102, 0.22);
+.resFor {
+	     display: inline;
+	     margin-top: 55px;
+	     border-width: 1px;
+         border-style: solid;
+	     border-color: rgba(103, 103, 102, 0.22);
 }
-.resFoe{
-	    display: flex;
-	    width: 400px;
-	    height: 100px;
-	    text-align: center;
-	    font-size: smaller;
+.resFoe {
+	     display: flex;
+	     width: 400px;
+	     height: 100px;
+	     text-align: center;
+	     font-size: smaller;
 
 }
 .resDay0,.resDay1,.resDay2,.resDay3  {

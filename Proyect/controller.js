@@ -24,4 +24,4 @@ app.controller('myCont',function ($scope, $http, $localStorage){  //Create the c
         $scope.cityBox=  "";
         $scope.provinceBox= "";
   		} //at last clear the inputs
-  	});
+});
