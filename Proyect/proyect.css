@@ -4,10 +4,13 @@
 
 }
 .repeat{
+	     box-shadow: 5px 5px 5px #888888;	     
 	     display: inline;
-	     width: 460px;
-	     height: 300px;
+	     width: 442px;
+	     height: 281px;
 	     float: left;
+	     padding-left: 5px;
+	     padding-top: 5px;
 }
 
 .res{ 
@@ -19,17 +22,14 @@
           width: 400px;
           display: block;
           height: 235px;
-          margin-left: -8px;
-		  margin-right: -35px;
        	  padding: 20px 20px 24px;
-		  background-color: #fff;
 		  position: relative;
 		  line-height: 1.2;
 		  background-image: url("img/sky.jpg");
 		  border-width: 1px;
 		  border-style: solid;
 	      border-color: rgba(103, 103, 102, 0.22);
-	      margin: 10px;
+	      
 
         
         }
@@ -79,8 +79,9 @@ ol{
 
 }
 .remove{
-	   
+	   cursor: pointer;
 	   float: right;
+	   border-radius: 50%;
 }
 .resFor{
 	    display: inline;
