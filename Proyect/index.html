@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html ng-app="myApp">
   <head>
       <meta charset="utf-8">
   	  <title>Angular Proyect</title>
       <link rel="stylesheet" type="text/css" href="proyect.css">
-  	  
+
   </head>
   <body ng-controller="myCont">
       <h1>Weather Master</h1>
@@ -16,19 +17,19 @@
         <div class="repeat" ng-repeat= "weather in weathers">
           <!-- Create the function that shows all items in weathers array -->
            <div class="res" ng-mouseenter="remove.isShowed = true" ng-mouseleave="remove.isShowed = false">
-               <div class="remove" ng-click="removeCity(weather)" ng-show="remove.isShowed">
-                   <img src="img/close-button.jpg"></div>
+                <div class="remove" ng-click="removeCity(weather)" ng-show="remove.isShowed">
+                    <img src="img/close-button.jpg"></div>
                 <!-- add an image that dissapear when the mouse is leaves the mockup and appears when it is over the mock up, when it is clicked it will remove the selected city -->
-               <div class="results">{{weather.city}}, {{weather.country}}<br>
+                <div class="results">{{weather.city}}, {{weather.country}}<br>
                       {{weather.date}}<br>{{weather.text}}</div>
                        <!-- show the name of the city, country, date and a description of the weather -->
-               <div class="resIco">
-                   <img src="http://l.yimg.com/a/i/us/we/52/{{weather.code}}.gif"></div>
+                <div class="resIco">
+                   <img ng-src="http://l.yimg.com/a/i/us/we/52/{{weather.code}}.gif"></div>
                 <!-- show the weather icon -->
-               <div class="resTem">{{weather.temp}}</div>
-               <div class="resUni">°{{weather.tempUnit}}</div>
+                <div class="resTem">{{weather.temp}}</div>
+                <div class="resUni">°{{weather.tempUnit}}</div>
               <!-- show the temperature and the temperature unit -->
-               <div class="resPHW">
+                <div class="resPHW">
                    <ol>
                         <div class="resPre">Pressure: {{weather.pressure}} {{weather.presUnit}}</div>
                         <!-- show the pressure and the pressure unit -->
@@ -37,8 +38,15 @@
                         <div class="resWin">Wind: {{weather.wind}} {{weather.windUnit}}</div>
                         <!-- Show the wind speed and the wind speed unit -->
                    </ol>
-              </div>
-           </div>
+               </div>
+               <div class="resFore">    
+                   <div class= "resFoRep" ng-repeat="child in weather.fore">{{child.day}}
+                        <div><img ng-src="http://l.yimg.com/a/i/us/we/52/{{child.code}}.gif"></div>
+                        <div>{{child.high}}</div>
+                        <div>{{child.low}}</div>
+                   </div>
+               </div>    
+            </div>
         </div>        	  
       </div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>

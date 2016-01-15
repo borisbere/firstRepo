@@ -1,0 +1,126 @@
+{
+"query": {
+	"count": 1,
+	"created": "20151209T18:
+	17:25Z",
+	"lang": "esES",
+	"results": {
+		"channel": {
+			"title": "Yahoo! Weather Resistencia,
+			AR",
+			"link":
+			"http://us.rd.yahoo.com/dailynews/rss/weather/Resistencia__AR/*http://weather.yahoo.com/fore
+			cast/ARCO0072_c.html",
+			"description": "Yahoo! Weather for Resistencia, AR",
+			"language": "enus",
+			"lastBuildDate": "Wed, 09 Dec 2015 3:01 pm ART",
+			"ttl": "60",
+			"location": {
+				"city": "Resistencia",
+				"country": "Argentina",
+				"region": "CHO"
+			},
+			"units": {
+				"distance": "km",
+				"pressure": "mb",
+				"speed": "km/h",
+				"temperature": "C"
+			},
+			"wind": {
+				"chill": "20",
+				"direction": "140",
+				"speed": "9.66"
+			},
+			"atmosphere": {
+				"humidity": "100",
+				"pressure": "982.05",
+				"rising": "0",
+				"visibility": "6"
+			},
+			"astronomy": {
+				"sunrise": "5:52 am",
+				"sunset": "7:44 pm"
+			},
+			"image": {
+				"title": "Yahoo! Weather",
+				"width": "142",
+				"height": "18",
+				"link": "http://weather.yahoo.com",
+				"url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/newswea.
+				gif"
+			},
+			"item": {
+				"title": "Conditions for Resistencia, AR at 3:01 pm ART",
+				"lat": "27.46",
+				"long": "58.99",
+				"link":
+				"http://us.rd.yahoo.com/dailynews/rss/weather/Resistencia__AR/*http://weather.yahoo.com/fore
+				cast/ARCO0072_c.html",
+				"pubDate": "Wed, 09 Dec 2015 3:01 pm ART",
+				"condition": {
+					"code": "4",
+					"date": "Wed, 09 Dec 2015 3:01 pm ART",
+					"temp": "20",
+					"text": "Thunderstorm"
+				},
+				"description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/4.gif\"/><br />\n<b>Current
+				Conditions:</b><br />\nThunderstorm, 20 C<BR />\n<BR /><b>Forecast:</b><BR />\nWed Thunderstorms.
+				High: 27 Low: 21<br />\nThu Partly
+				Cloudy. High: 32 Low: 21<br />\nFri Mostly
+				Sunny. High: 34 Low: 23<br />\nSat Partly
+				Cloudy. High: 34 Low: 26<br />\nSun AM
+				Thunderstorms. High: 34 Low: 24<br />\n<br />\n<a
+				href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Resistencia__AR/*http://weather.yahoo.co
+				m/forecast/ARCO0072_c.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided
+				by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
+				"forecast": [
+				{
+				"code": "4",
+				"date": "9 Dec 2015",
+				"day": "Wed",
+				"high": "27",
+				"low": "21",
+				"text": "Thunderstorms"
+				},
+				{
+				"code": "30",
+				"date": "10 Dec 2015",
+				"day": "Thu",
+				"high": "32",
+				"low": "21",
+				"text": "Partly Cloudy"
+				},
+				{
+				"code": "34",
+				"date": "11 Dec 2015",
+				"day": "Fri",
+				"high": "34",
+				"low": "23",
+				"text": "Mostly Sunny"
+				},
+				{
+				"code": "30",
+				"date": "12 Dec 2015",
+				"day": "Sat",
+				"high": "34",
+				"low": "26",
+				"text": "Partly Cloudy"
+				},
+				{
+				"code": "38",
+				"date": "13 Dec 2015",
+				"day": "Sun",
+				"high": "34",
+				"low": "24",
+				"text": "AM Thunderstorms"
+				}
+				],
+				"guid": {
+				"isPermaLink": "false",
+				"content": "ARCO0072_2015_12_13_7_00_ART"
+				}
+				}
+			}
+			}
+		}
+	}

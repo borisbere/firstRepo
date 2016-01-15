@@ -11,15 +11,18 @@ app.controller('myCont',function ($scope, $http, $localStorage){  //Create the c
   			$http.get('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22'+city+'%E2%80%8B%2C%20'+province+'%E2%80%8B%22)%20and%20u=%22c%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys').then(function(response){
   				  var weatheRes = response.data.query.results.channel;
             $localStorage.weathers.push({
-                city: weatheRes.location.city,         country: weatheRes.location.country,
-                date: weatheRes.item.condition.date,   text: weatheRes.item.condition.text,
-                code: weatheRes.item.condition.code,   temp: weatheRes.item.condition.temp,
-                tempUnit: weatheRes.units.temperature, pressure: weatheRes.atmosphere.pressure,
-                presUnit: weatheRes.units.pressure,    humidity: weatheRes.atmosphere.humidity,
-                wind: weatheRes.wind.speed,            windUnit: weatheRes.units.speed});
-            $scope.weathers= $localStorage.weathers;
-          //$scope.weathers = $scope.$storage.weathers;
-  			                        
+                city: weatheRes.location.city,             country: weatheRes.location.country,
+                date: weatheRes.item.condition.date,       text: weatheRes.item.condition.text,
+                code: weatheRes.item.condition.code,       temp: weatheRes.item.condition.temp,
+                tempUnit: weatheRes.units.temperature,     pressure: weatheRes.atmosphere.pressure,
+                presUnit: weatheRes.units.pressure,        humidity: weatheRes.atmosphere.humidity,
+                wind: weatheRes.wind.speed,                windUnit: weatheRes.units.speed,
+                fore: weatheRes.item.forecast
+                });
+            /*$localStorage.weathers.forecast.push({
+              day0: {day: weatheRes.item.forecast[0].day,     code: weatheRes.forecast[0].code,
+                      high:  weatheRes.forecast[0].high,  low:  weatheRes.forecast[0].low}
+            }) */                               
         });//send a get request yahoo's Api and push the results in the weathers array
         $scope.cityBox=  "";
         $scope.provinceBox= "";
